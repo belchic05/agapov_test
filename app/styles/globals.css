@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--bg:#ffffff;--ink:#111111;--line:#E6E6E6;--accent-from:#EFFF3B;--accent-to:#FFD93D;--section-pad:96px;}
+html{scroll-behavior:smooth}
+body{@apply bg-white text-ink antialiased;letter-spacing:.02em}
+.container-12{@apply container;max-width:1200px}
+.section{padding:var(--section-pad) 0;border-top:1px solid var(--line)}
+.card{@apply border rounded-xl bg-white;border-color:var(--line)}
+.btn{@apply inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium transition}
+.btn-primary{background:linear-gradient(90deg,var(--accent-from),var(--accent-to));color:#0f0f0f}
+.btn-ghost{@apply border text-ink bg-white;border-color:var(--line)}
+.kpi{@apply font-semibold}
+.mute{@apply text-neutral-600}
+.divider{height:1px;background:var(--line)}
